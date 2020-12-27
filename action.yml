@@ -1,0 +1,12 @@
+name: "Deploy Formspree Forms"
+branding:
+  icon: "upload-cloud"
+  color: "red"
+description: "Deploy your Formspree forms directly from GitHub"
+runs:
+  using: "docker"
+  image: "Dockerfile"
+inputs:
+  deployKey:
+    description: "Your Formspree Project Key"
+    required: true
